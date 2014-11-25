@@ -32,7 +32,7 @@ public class ShareProductsTest {
 		SearchResultPage resultPage = myHomePage.submit();
 		ProductDetailsPage productPage = resultPage.chooseFirstProduct();
 		productPage.shareByEmail();
-		productPage.typeEmailAddress("narayananembar@gmail.com");
+		productPage.typeEmailAddress(gmailUserName);
 		productPage.submit();
 		
 		selenium.close();
