@@ -25,6 +25,9 @@ public class ProductDetailsPage {
 	@FindBy(how = How.XPATH, using ="//*[@id='nav-item-signout']")
 	WebElement signOut;
 	
+	@FindBy(how = How.XPATH, using="//*[@id='prodDetails']/div[2]/div[2]/div[1]/div[2]/div/div/table/tbody/tr[1]/td[2]")
+	WebElement asin;
+	
 	MySelenium selenium;	
 	public ProductDetailsPage(MySelenium pSelenium) {
 		this.selenium = pSelenium;
@@ -54,5 +57,9 @@ public class ProductDetailsPage {
 
 	public void close() {
 		selenium.close();		
+	}
+	
+	public String getASIN(){
+		return selenium.getText(asin.getText());
 	}
 }

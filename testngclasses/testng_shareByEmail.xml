@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Share Products">
-	<parameter name="amazonUserName" value="your amazon username" />
-	<parameter name="amazonPassword" value="amazon password" />
-	<parameter name="gmailUserName" value="your gmail" />
-	<parameter name="gmailPassword" value="your gmail password" />
-	<parameter name="textToVerify" value="the link" />
+	<parameter name="amazonUserName" value="narayanan611@gmail.com" />
+	<parameter name="amazonPassword" value="vesper" />
+	<parameter name="gmailUserName" value="narayanan611@gmail.com" />
+	<parameter name="gmailPassword" value="vesper1729!" />
+	<parameter name="textToVerify" value="Bose SoundLink Mini Bluetooth Speaker" />
 	<test name="shareByEmail">
 		<classes>
 			<class name="com.indix.appName.qa.tests.ShareProductsTest" />
